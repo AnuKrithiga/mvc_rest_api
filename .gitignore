@@ -1,0 +1,11 @@
+*/.vs/
+/.vs/
+/packages/
+*.dll
+*.vssscc
+/bin/
+/obj/
+*/bin/*
+*/obj/*
+*.csproj.*
+*/import/*
