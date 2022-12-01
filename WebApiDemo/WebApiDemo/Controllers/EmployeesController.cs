@@ -11,35 +11,33 @@ namespace WebApiDemo.Controllers
 {
     public class EmployeesController : ApiController
     {
-        private EmployeeRepository employeeRepository;
-        private EmpDBContext db = new EmpDBContext();
+        private EmployeeService employeeService;
 
         public EmployeesController()
         {
-            this.employeeRepository = new EmployeeRepository();
+            this.employeeService = new EmployeeService();
         }
-        /*public IEnumerable<Employee> GetAllEmployees()
+        public IEnumerable<Employee> GetAllEmployees()
         {
-            return employeeRepository.GetAllEmployees();
+            return employeeService.GetAllEmployees();
         }
 
         public IHttpActionResult GetEmployee(int id)
         {
-            var employee = employeeRepository.GetEmployee(id);
+            var employee = employeeService.GetEmployee(id);
             if (employee == null)
             {
                 return NotFound();
             }
             return Ok(employee);
-        }*/
+        }
 
         [System.Web.Http.HttpPost]
         public IHttpActionResult Create(Employee emp)
         {
             try
             {
-                db.Employees.Add(emp);
-                db.SaveChanges();
+                employeeService.SaveEmployeee(emp);
                 return Ok(emp);
             }
             catch
@@ -51,14 +49,13 @@ namespace WebApiDemo.Controllers
 
         // PUT: Employee/Edit/5
         [System.Web.Http.HttpPut]
-        public IHttpActionResult Edit(int id, FormCollection collection)
+        public IHttpActionResult Edit(Employee emp)
         {
             try
             {
-                var employee = db.Employees.Single(m => m.ID == id);
+                var employee = employeeService.UpdateEmployee(emp);
                 if (employee != null)
                 {
-                    db.SaveChanges();
                     return Ok();
                 }
                 return NotFound();
