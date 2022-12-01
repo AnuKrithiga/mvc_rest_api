@@ -13,5 +13,5 @@
 WebApiDemo/WebApiDemo/bin/*
 WebApiDemo/WebApiDemo/obj/*
 WebApiDemo/packages/*
-WebApiDemo/WebApiDemo.Test/obj/*
-WebApiDemo/WebApiDemo.Test/bin/*
+WebApiDemo/WebApiDemoTest/obj/*
+WebApiDemo/WebApiDemoTest/bin/*

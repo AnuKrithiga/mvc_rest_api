@@ -2,18 +2,18 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("WebApiDemo.Test")]
+[assembly: AssemblyTitle("WebApiDemoTest")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Crowe LLP")]
-[assembly: AssemblyProduct("WebApiDemo.Test")]
+[assembly: AssemblyProduct("WebApiDemoTest")]
 [assembly: AssemblyCopyright("Copyright © Crowe LLP 2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 [assembly: ComVisible(false)]
 
-[assembly: Guid("84b2128d-8509-402d-a715-70a99c51ffd4")]
+[assembly: Guid("57ee30bf-d8bd-4471-9ea1-9093ca86a700")]
 
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
