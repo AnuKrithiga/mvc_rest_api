@@ -11,6 +11,7 @@
 *.csproj.*
 */import/*
 WebApiDemo/WebApiDemo/bin/*
-WebApiDemo/packages/*
 WebApiDemo/WebApiDemo/obj/*
+WebApiDemo/packages/*
 WebApiDemo/WebApiDemo.Test/obj/*
+WebApiDemo/WebApiDemo.Test/bin/*
