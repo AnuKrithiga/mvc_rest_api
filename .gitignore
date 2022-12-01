@@ -1,6 +1,7 @@
 */.vs/
 /.vs/
 /packages/
+/packages/*
 *.dll
 *.vssscc
 /bin/
@@ -9,3 +10,6 @@
 */obj/*
 *.csproj.*
 */import/*
+WebApiDemo/WebApiDemo/bin/*
+WebApiDemo/packages/*
+WebApiDemo/WebApiDemo/obj/*
