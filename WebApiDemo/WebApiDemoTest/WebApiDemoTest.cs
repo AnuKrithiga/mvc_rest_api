@@ -1,21 +1,24 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+﻿using System.Net;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using System.Web.Http.Results;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using WebApiDemo.Controllers;
+using WebApiDemo.Models;
 
 namespace WebApiDemoTest
 {
     [TestClass]
-    public class WebApiDemoTest
+    public class EmployeeTest
     {
-        public class WebApiDemoTest
+        [TestMethod]
+        public async Task GetAllEmployees_ShouldReturnAll()
         {
-            [TestMethod]
-            public async Task GetAllEmployees_ShouldReturnAll()
-            {
-                var controller = new EmployeesController();
-                var result = controller.GetAllEmployees() as NegotiatedContentResult<Employee>;
-
-                Assert.Equals(HttpStatusCode.OK, result.StatusCode);
-            }
+            var controller = new EmployeesController();
+            var result = controller.GetAllEmployees() as List<Employee>;
+            Assert.IsNotNull(result);
+            //Assert.AreEqual(HttpStatusCode.OK, result.StatusCode);
         }
     }
+
 }

@@ -11,7 +11,7 @@ namespace WebApiDemo.Service
     {
         private EmpDBContext db = new EmpDBContext();
 
-        public List<Employee> GetAllEmployees()
+        public IEnumerable<Employee> GetAllEmployees()
         {
             var employees = db.Employees;
             return db.Employees.ToList();
