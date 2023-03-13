@@ -1,0 +1,17 @@
+*/.vs/
+/.vs/
+/packages/
+/packages/*
+*.dll
+*.vssscc
+/bin/
+/obj/
+*/bin/*
+*/obj/*
+*.csproj.*
+*/import/*
+WebApiDemo/WebApiDemo/bin/*
+WebApiDemo/WebApiDemo/obj/*
+WebApiDemo/packages/*
+WebApiDemo/WebApiDemoTest/obj/*
+WebApiDemo/WebApiDemoTest/bin/*
